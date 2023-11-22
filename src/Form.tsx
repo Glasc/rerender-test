@@ -28,7 +28,7 @@ export const Form = () => {
   return (
     <div>
       <form>
-        <label className=" font-semibold" htmlFor="amount">
+        <label className="text-2xl font-semibold" htmlFor="amount">
           Amount:{" "}
         </label>
         <input
@@ -52,9 +52,9 @@ export const Form = () => {
         {Object.keys(inputValue).map((key) => {
           return (
             <div key={key}>
-              <label htmlFor={key}>{addLeadingZero(Number(key) + 1)}: </label>
+              <label className="text-xl" htmlFor={key}>{addLeadingZero(Number(key) + 1)}: </label>
               <input
-                className="border-2 px-1 border-[rgb(230,228,217)]"
+                className="border-2 text-xl px-1 border-[rgb(230,228,217)]"
                 type="text"
                 id={key}
                 name={key}
